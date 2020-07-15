@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d4d3f8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="107.0" prefHeight="293.0" prefWidth="600.0" style="-fx-background-color: #819c8b;">
+         <children>
+            <TextField fx:id="countOfPlayers" layoutX="170.0" layoutY="24.0" promptText="Кількість гравців">
+               <font>
+                  <Font name="Garamond Bold" size="22.0" />
+               </font></TextField>
+            <TextField fx:id="pathToFiles" layoutX="170.0" layoutY="88.0" promptText="Шлях до файлу">
+               <font>
+                  <Font name="Garamond Bold" size="22.0" />
+               </font></TextField>
+            <Text fill="#f5f5f5" layoutX="171.0" layoutY="169.0" stroke="#514c4c" strokeDashOffset="3.0" strokeLineJoin="BEVEL" strokeType="OUTSIDE" text="Наприклад: &quot;D:/...&quot;">
+               <font>
+                  <Font name="Garamond Bold" size="29.0" />
+               </font></Text>
+            <Button fx:id="buttonGenerate" contentDisplay="CENTER" layoutX="229.0" layoutY="233.0" mnemonicParsing="false" style="-fx-background-color: #d4d3f8; -fx-border-color: #333;" text="Згенерувати" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Garamond Bold" size="21.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#654559" />
+                        <Stop color="#3c2626" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Text fill="#867e7e" layoutX="487.0" layoutY="272.0" stroke="#3b403d" strokeType="OUTSIDE" text="by deezzex">
+               <font>
+                  <Font name="Garamond Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#819c8b" layoutX="160.0" layoutY="78.0" stroke="#333634" strokeDashOffset="5.0" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="2.0" text="БУНКЕР">
+         <font>
+            <Font name="Garamond Bold" size="66.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="74.0" fitWidth="138.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/bunker-hi.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
